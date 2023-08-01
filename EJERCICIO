@@ -25,3 +25,33 @@ Module Program
         Loop
     End Sub
 End Module
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+Imports System
+
+Module Program
+    Sub Main(args As String())
+        Dim variable As Integer
+        Console.WriteLine("Hello World!")
+        Do Until variable = 4
+
+            Console.WriteLine("Esta es la opcion 1 ")
+            Console.WriteLine("Esta es la opcion 2 ")
+            Console.WriteLine("3 Ingrece su nombre")
+            Console.WriteLine("4 Salga de la aplicación")
+            variable = Console.ReadLine
+            If variable = 1 Then
+                Console.WriteLine(" Dato ingresado correctamente")
+            ElseIf variable = 2 Then
+                Console.WriteLine("Dato ingresado Incorrectamente")
+            ElseIf variable = 4 Then
+                Console.WriteLine("Esto es opcion 3")
+            End If
+            Console.WriteLine("Cerrar 4")
+        Loop
+    End Sub
+End Module
